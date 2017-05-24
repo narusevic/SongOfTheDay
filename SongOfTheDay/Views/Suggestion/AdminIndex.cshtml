@@ -1,0 +1,11 @@
+﻿@using SongOfTheDay.Controllers
+@using SongOfTheDay.Models
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main-video-body main-suggestion-body">
+    <div class="video"><iframe height="576" width="1024" src="@SuggestionController.GetSuggestedVideo()" frameborder="0"></iframe></div>
+    <div class="archive">@{Html.RenderAction("SuggestionsArchive", "Suggestion");}</div>
+</div>

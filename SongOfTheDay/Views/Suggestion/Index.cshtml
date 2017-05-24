@@ -1,0 +1,13 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="suggestion-from">
+    <form class="form" action="/Suggestion/SuggestVideo">
+        <input name="suggestedVideoName" class="suggested-video-name" placeholder="Your Name" />
+        <input name="suggestedVideoUrl" class="suggested-video-url" placeholder="Song url" />
+        <textarea name="suggestedVideoOpinion" class="suggested-video-opinion" placeholder="Opinion"></textarea>
+        <button class="suggested-video-submit">Suggest!</button>
+    </form>
+</div>

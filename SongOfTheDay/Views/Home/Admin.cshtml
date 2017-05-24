@@ -1,0 +1,22 @@
+﻿@using SongOfTheDay.Controllers
+@{
+    ViewBag.Title = "Admin Page";
+}
+
+
+
+<div class="main-video-body">
+    <div class="video-input">
+        <form action="/Video/VideoLink" class="form">
+
+            <h3>Link</h3>
+            <button class="stream-video">Stream!</button>
+            <input type="text" class="video-link" name="videoLink" />
+            <h3>Information</h3>
+            <textarea class="video-info" name="videoInfo"></textarea>
+
+        </form>
+    </div>
+    <div class="video"><iframe height="576" width="1024" src="@VideoController.GetVideo()" frameborder="0"></iframe></div>
+    <div class="archive">@{Html.RenderAction("AdminArchive", "Video");}</div>
+</div>

@@ -1,0 +1,336 @@
+﻿/************ DEFAULT ********/
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+div.clear {
+    clear: both;
+}
+
+textarea {
+    resize: none;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.form {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.main-body {
+    width: 1540px;
+    left: 0;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+}
+
+.main-video-body {
+    width: 1540px;
+    left: 0;
+    top: -20px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+/******************** ADMIN ************************/
+
+.video-input {
+    width: 1280px;
+    left: 0;
+    top: -30px;
+    right: 0;
+    bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.video-link {
+    width: 800px;
+}
+
+.stream-video {
+    background-color: greenyellow;
+    display: block;
+    float: right;
+    height: 180px;
+    width: 300px;
+}
+
+.video-info {
+    height: 100px;
+    width: 800px;
+}
+
+/********************** ARCHIVE **************/
+
+.archive {
+    width: 500px;
+    height: 576px;
+    display: inline-block;
+    margin-left: -4px;
+    position: fixed;
+    background-color: #F1F1F1;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.archive-video {
+    position: relative;
+    height: 90px;
+    background-color: #e0e0e0;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.archive-video-image {
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    height: 90px;
+    width: 120px;
+}
+
+.archive-video-image-image {
+    height: 100%;
+    width: 100%;
+}
+
+.archive-video-information {
+    position: absolute;
+    height: 80px;
+    display: inline-block;
+    left: 125px;
+    font-weight: bold;
+    margin: 2px;
+    color: blue;
+    width: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.archive-video-information-info {
+    display: none;
+}
+
+.archive-video-information-date {
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 126px;
+    color: grey;
+    font-weight: bold;
+}
+
+.archive-video-information-name {
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 126px;
+    color: grey;
+    font-weight: bold;
+}
+
+.archive-admin-video-information-date {
+    margin: 0px;
+    margin-top: 2px;
+}
+
+.archive-remove-video {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 28px;
+    width: 100px;
+}
+
+.archive-add-video {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 28px;
+    margin-left: 215px;
+    width: 100px;
+}
+
+.archive-edit-video {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 28px;
+    margin-left: 120px;
+    width: 100px;
+}
+
+/******************   VIDEO  *************************/
+
+.video {
+    display: inline-block;
+    width: 1024px;
+}
+
+.info-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: midnightblue;
+    margin-top: 5px;
+}
+
+.info-info {
+    font-size: 22px;
+    color: grey;
+}
+
+/*************   EDIT  *************************/
+
+.edit {
+    position: relative;
+    margin-left: 400px;
+}
+
+.edit-link {
+    position: absolute;
+    width: 800px;
+}
+
+.edit-name {
+    position: absolute;
+    margin-top: 40px;
+    width: 800px;
+}
+
+.edit-date {
+    margin-top: 80px;
+    width: 800px;
+    position: absolute;
+}
+
+.edit-info {
+    position: absolute;
+    margin-top: 120px;
+    width: 800px;
+    height: 250px;
+    resize: none;
+}
+
+.edit-save {
+    margin-top: 390px;
+}
+
+.edit-url {
+    font-weight: bold;
+    left: 70px;
+    top: 3px;
+    position: absolute;
+}
+
+.edit-title {
+    font-weight: bold;
+    left: 60px;
+    top: 42px;
+    position: absolute;
+}
+
+.edit-datetext {
+    font-weight: bold;
+    left: 58px;
+    top: 81px;
+    position: absolute;
+}
+
+.edit-information {
+    font-weight: bold;
+    left: 62px;
+    top: 120px;
+    position: absolute;
+}
+/******************   SUGGESTIONS *******************/
+
+.suggestion-from {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1000px;
+}
+
+.suggested-video-name {
+    position: absolute;
+    margin-top: -45px;
+}
+
+.suggested-video-url {
+    position: absolute;
+    width: 600px;
+}
+
+.suggested-video-opinion {
+    position: absolute;
+    margin-top: 45px;
+    height: 300px;
+    width: 600px;
+}
+
+.suggested-video-submit {
+    position: absolute;
+    background-color: greenyellow;
+    margin-top: 355px;
+    width: 200px;
+    height: 90px;
+    font-size: 20px;
+}
+
+.main-suggestion-body {
+    margin-top: 120px;
+}
+
+.suggestion {
+    height: 200px;
+    width: 600px;
+    border: 3px solid greenyellow;
+    border-radius: 4px;
+    background-color: greenyellow;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    font-size: 60px;
+}
+
+.suggestion-added {
+    color: green;
+}
+
+.suggestion-not-added {
+    color: red;
+}

@@ -1,0 +1,16 @@
+﻿@using SongOfTheDay.Controllers
+@{
+    ViewBag.Title = "Test Page";
+}
+<script src="http://www.youtube.com/player_api"></script>
+<script src="//connect.soundcloud.com/sdk.js"></script>
+<script>
+    SC.initialize({
+        client_id: "2a64e1eac7c4ea3d2b26650ff504b552",
+        redirect_uri: "~/callback.html",
+    });
+</script>
+
+@*<div id="player"></div>*@
+<a class="soundcloud-player" href="http://soundcloud.com/forss/flickermood">Play</a>
+

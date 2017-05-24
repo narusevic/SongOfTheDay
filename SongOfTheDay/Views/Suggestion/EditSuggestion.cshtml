@@ -1,0 +1,26 @@
+﻿@model SongOfTheDay.Models.Suggestion
+
+<div class="edit">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <span class="edit-url">Url:</span>
+    <span class="edit-title">Title:</span>
+    <span class="edit-datetext">User:</span>
+    <span class="edit-information">Info:</span>
+
+    <form action="/Suggestion/SaveSuggestion" class="form" id="edit-form">
+
+        <input type="hidden" name="suggestionId" class="edit-link" value="@Model.SuggestionId" />
+        <input name="editLink" class="edit-link" value="@Model.Url" />
+        <input name="editName" class="edit-name" value="@Model.Name" />
+        <input name="editUser" class="edit-date" value="@Model.User" />
+        <textarea name="editInfo" form="edit-form" class="edit-info">@Model.Opinion</textarea>
+        <button class="edit-save">Save Video</button>
+
+    </form>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/scripts/video.js")
+</div>

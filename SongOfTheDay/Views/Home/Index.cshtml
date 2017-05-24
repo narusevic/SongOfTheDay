@@ -1,0 +1,27 @@
+﻿@using SongOfTheDay.Controllers
+@{
+    ViewBag.Title = "Home Page";
+}
+<div>
+    <div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Song Of The Day -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-4584031311121380"
+             data-ad-slot="1693236540"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <div class="main-body">
+        <div class="video">
+            <iframe height="576" width="1024" src="@VideoController.GetVideo()" frameborder="0"></iframe>
+        </div>
+        <div class="archive">@{Html.RenderAction("Archive", "Video");}</div>
+        <div class="information">
+            <div class="info-name"></div>
+            <div class="info-info"></div>
+        </div>
+    </div>
+</div>

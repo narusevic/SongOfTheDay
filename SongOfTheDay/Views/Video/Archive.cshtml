@@ -1,0 +1,19 @@
+﻿@model System.Collections.Generic.List<SongOfTheDay.Models.Video>
+
+@foreach (var item in Model)
+{
+    <div class="archive-video" id="@item.Link">
+        <div class="archive-video-image">
+            <img class="archive-video-image-image" src="@item.Image">
+        </div>
+        <div class="archive-video-information">
+            <strong>@item.Name</strong>
+        </div>
+        <div class="archive-video-information-info">
+            @MvcHtmlString.Create(item.Information)
+        </div>
+        <div class="archive-video-information-date">
+            @item.Date.ToString("yyyy MMMM dd")
+        </div>
+    </div>
+}

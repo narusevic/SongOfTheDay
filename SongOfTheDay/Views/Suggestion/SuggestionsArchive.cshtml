@@ -1,0 +1,36 @@
+﻿@model System.Collections.Generic.List<SongOfTheDay.Models.Suggestion>
+
+@foreach (var item in Model)
+{
+    <div class="archive-video" id="@item.Url">
+        <div class="archive-video-image">
+            <img class="archive-video-image-image" src="@item.Image">
+        </div>
+        <div class="archive-video-information">
+            <div>
+                <strong>@item.Name</strong>
+            </div>
+            <div class="archive-video-information-name archive-admin-video-information-date ">
+                @item.User
+            </div>
+            <form action="/Suggestion/RemoveSuggestion" class="form archive-remove-video">
+                <input type="hidden" name="id" value="@item.SuggestionId" />
+                <button>
+                    Remove Video
+                </button>
+            </form>
+            <form action="/Suggestion/EditSuggestion" class="form archive-edit-video">
+                <input type="hidden" name="id" value="@item.SuggestionId" />
+                <button>
+                    Edit Video
+                </button>
+            </form>
+            <form action="/Suggestion/AddToMain" class="form archive-add-video">
+                <input type="hidden" name="id" value="@item.SuggestionId" />
+                <button>
+                    Add Video
+                </button>
+            </form>
+        </div>
+    </div>
+}

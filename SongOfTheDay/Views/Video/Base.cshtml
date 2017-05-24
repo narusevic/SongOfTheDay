@@ -1,0 +1,16 @@
+﻿@model System.Collections.Generic.List<SongOfTheDay.Models.Video>
+
+@foreach (var item in Model)
+{
+    <div class="archive-videos-list">
+        
+        <div class="archive-video">
+            @item.Link
+        </div>
+
+        <form action="/Video/RemoveVideo" class="form">
+            <button class="remove-button">@item.VideoId</button>
+        </form>
+
+    </div>
+}

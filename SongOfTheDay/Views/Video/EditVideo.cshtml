@@ -1,0 +1,26 @@
+﻿@model SongOfTheDay.Models.Video
+
+<div class="edit">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <span class="edit-url">Url:</span>
+    <span class="edit-title">Title:</span>
+    <span class="edit-datetext">Date:</span>
+    <span class="edit-information">Info:</span>
+
+    <form action="/Video/SaveVideo" class="form" id="edit-form">
+        
+        <input type="hidden" name="videoId" class="edit-link" value="@Model.VideoId" />
+        <input name="editLink" class="edit-link" value="@Model.Link" />
+        <input name="editName" class="edit-name" value="@Model.Name" />    
+        <input name="editDate" class="edit-date" value="@Model.Date" />    
+        <textarea name="editInfo" form="edit-form" class="edit-info">@Model.Information</textarea>
+        <button class="edit-save">Save Video</button>
+
+    </form>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/scripts/video.js")
+</div>
